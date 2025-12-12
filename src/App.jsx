@@ -104,17 +104,19 @@ export default function App() {
   };
 
   if (submitted) {
-    return (
-      <SuccessPage
-        name={getValues().firstName}
-        onRestart={() => {
-          clearForm();
-          reset();
-          setStep(0);
-        }}
-      />
-    );
-  }
+  return (
+    <SuccessPage
+      name={getValues().firstName}
+      onRestart={() => {
+        clearForm();
+        reset();       
+        setStep(0);     // IMPORTANT — go back to step 0
+        setSubmitted(false);
+      }}
+    />
+  );
+}
+
 
   return (
     <div className="max-w-4xl mx-auto mt-10">
