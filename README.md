@@ -1,5 +1,5 @@
 ## Student Details
-- **Name:** Jaffren (Bacchi)
+- **Name:** Sageda Jaffren Shaik
 - **Roll Number:** 23A91A6152
 - **Project:** Accessible Multi-Step Registration Form
 
